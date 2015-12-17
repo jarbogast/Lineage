@@ -15,28 +15,28 @@ class GedcomParserTestCase: XCTestCase {
     func testParseHeader() {
         let documentLayout = parser.parseRecords("0 HEAD")
         
-        XCTAssertNotNil(documentLayout.headerRecord)
+        XCTAssertNotNil(documentLayout.header)
         XCTAssertNil(documentLayout.submissionRecord)
         XCTAssertEqual(documentLayout.records.count, 0)
-        XCTAssertNil(documentLayout.trailerRecord)
+        XCTAssertNil(documentLayout.trailer)
     }
 
     func testParseNoHeaderOneIndividual() {
         let documentLayout = parser.parseRecords("0 INDI")
         
-        XCTAssertNil(documentLayout.headerRecord)
+        XCTAssertNil(documentLayout.header)
         XCTAssertNil(documentLayout.submissionRecord)
         XCTAssertEqual(documentLayout.records.count, 1)
-        XCTAssertNil(documentLayout.trailerRecord)
+        XCTAssertNil(documentLayout.trailer)
     }
     
     func testParseHeaderAndOneIndividual() {
         let documentLayout = parser.parseRecords(   "0 HEAD\n" +
                                                     "0 INDI")
-        XCTAssertNotNil(documentLayout.headerRecord)
+        XCTAssertNotNil(documentLayout.header)
         XCTAssertNil(documentLayout.submissionRecord)
         XCTAssertEqual(documentLayout.records.count, 1)
-        XCTAssertNil(documentLayout.trailerRecord)
+        XCTAssertNil(documentLayout.trailer)
     }
     
     func testParseHeaderSubmissionIndividualAndTrailer() {
@@ -44,10 +44,10 @@ class GedcomParserTestCase: XCTestCase {
                                                     "0 SUBN\n" +
                                                     "0 INDI\n" +
                                                     "0 TRLR")
-        XCTAssertNotNil(documentLayout.headerRecord)
+        XCTAssertNotNil(documentLayout.header)
         XCTAssertNotNil(documentLayout.submissionRecord)
         XCTAssertEqual(documentLayout.records.count, 1)
-        XCTAssertNotNil(documentLayout.trailerRecord)
+        XCTAssertNotNil(documentLayout.trailer)
     }
     
 }

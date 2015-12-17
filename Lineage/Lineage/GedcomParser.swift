@@ -10,28 +10,28 @@ import Foundation
 
 class GedcomParser {
     
-    func parseRecords(fileContents: String) -> (headerRecord: HeaderRecord?, submissionRecord: SubmissionRecord?, records: [IndividualRecord], trailerRecord: TrailerRecord?) {
+    func parseRecords(fileContents: String) -> (header: Header?, submissionRecord: SubmissionRecord?, records: [IndividualRecord], trailer: Trailer?) {
         let lineTerminators = NSCharacterSet.newlineCharacterSet()
         let lines = fileContents.componentsSeparatedByCharactersInSet(lineTerminators)
         let fieldSeparators = NSCharacterSet.whitespaceCharacterSet()
         
-        var headerRecord: HeaderRecord?
+        var headerRecord: Header?
         var submissionRecord: SubmissionRecord?
         var individuals = [IndividualRecord]()
-        var trailerRecord: TrailerRecord?
+        var trailerRecord: Trailer?
         
         for line in lines {
             let lineComponents = line.componentsSeparatedByCharactersInSet(fieldSeparators)
             let fieldName = lineComponents[1]
             
             if fieldName == "HEAD" {
-                headerRecord = HeaderRecord()
+                headerRecord = Header()
             } else if fieldName == "SUBN" {
                 submissionRecord = SubmissionRecord()
             } else if fieldName == "INDI" {
                 individuals.append(IndividualRecord())
             } else if fieldName == "TRLR" {
-                trailerRecord = TrailerRecord()
+                trailerRecord = Trailer()
             }
         }
         

@@ -14,13 +14,12 @@
 		ABD172B01C20FEA50071D2DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD172AE1C20FEA50071D2DA /* Main.storyboard */; };
 		ABD172B21C20FEA50071D2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD172B11C20FEA50071D2DA /* Assets.xcassets */; };
 		ABD172B51C20FEA50071D2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD172B31C20FEA50071D2DA /* LaunchScreen.storyboard */; };
-		ABD172CB1C20FEA50071D2DA /* LineageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172CA1C20FEA50071D2DA /* LineageUITests.swift */; };
-		ABD172DA1C2238CC0071D2DA /* HeaderRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172D91C2238CC0071D2DA /* HeaderRecord.swift */; };
+		ABD172DA1C2238CC0071D2DA /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172D91C2238CC0071D2DA /* Header.swift */; };
 		ABD172E31C2318800071D2DA /* GedcomParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172E21C2318800071D2DA /* GedcomParser.swift */; };
 		ABD172E51C23191D0071D2DA /* GedcomParserTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172E41C23191D0071D2DA /* GedcomParserTestCase.swift */; };
 		ABD172E71C231D690071D2DA /* IndividualRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172E61C231D690071D2DA /* IndividualRecord.swift */; };
 		ABD172E91C233C390071D2DA /* SubmissionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172E81C233C390071D2DA /* SubmissionRecord.swift */; };
-		ABD172EB1C233C7A0071D2DA /* TrailerRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172EA1C233C7A0071D2DA /* TrailerRecord.swift */; };
+		ABD172EB1C233C7A0071D2DA /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172EA1C233C7A0071D2DA /* Trailer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,15 +52,14 @@
 		ABD172BB1C20FEA50071D2DA /* LineageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LineageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD172C11C20FEA50071D2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABD172C61C20FEA50071D2DA /* LineageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LineageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABD172CA1C20FEA50071D2DA /* LineageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineageUITests.swift; sourceTree = "<group>"; };
 		ABD172CC1C20FEA50071D2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABD172D91C2238CC0071D2DA /* HeaderRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderRecord.swift; sourceTree = "<group>"; };
+		ABD172D91C2238CC0071D2DA /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		ABD172DB1C223D100071D2DA /* LineageTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LineageTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		ABD172E21C2318800071D2DA /* GedcomParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GedcomParser.swift; sourceTree = "<group>"; };
 		ABD172E41C23191D0071D2DA /* GedcomParserTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GedcomParserTestCase.swift; sourceTree = "<group>"; };
 		ABD172E61C231D690071D2DA /* IndividualRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndividualRecord.swift; sourceTree = "<group>"; };
 		ABD172E81C233C390071D2DA /* SubmissionRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmissionRecord.swift; sourceTree = "<group>"; };
-		ABD172EA1C233C7A0071D2DA /* TrailerRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrailerRecord.swift; sourceTree = "<group>"; };
+		ABD172EA1C233C7A0071D2DA /* Trailer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +136,6 @@
 		ABD172C91C20FEA50071D2DA /* LineageUITests */ = {
 			isa = PBXGroup;
 			children = (
-				ABD172CA1C20FEA50071D2DA /* LineageUITests.swift */,
 				ABD172CC1C20FEA50071D2DA /* Info.plist */,
 			);
 			path = LineageUITests;
@@ -147,11 +144,11 @@
 		ABD172D81C2238860071D2DA /* Gedcom */ = {
 			isa = PBXGroup;
 			children = (
-				ABD172D91C2238CC0071D2DA /* HeaderRecord.swift */,
+				ABD172D91C2238CC0071D2DA /* Header.swift */,
 				ABD172E21C2318800071D2DA /* GedcomParser.swift */,
 				ABD172E61C231D690071D2DA /* IndividualRecord.swift */,
 				ABD172E81C233C390071D2DA /* SubmissionRecord.swift */,
-				ABD172EA1C233C7A0071D2DA /* TrailerRecord.swift */,
+				ABD172EA1C233C7A0071D2DA /* Trailer.swift */,
 			);
 			name = Gedcom;
 			sourceTree = "<group>";
@@ -291,11 +288,11 @@
 				ABD172E71C231D690071D2DA /* IndividualRecord.swift in Sources */,
 				ABD172A61C20FEA50071D2DA /* AppDelegate.swift in Sources */,
 				ABD172A91C20FEA50071D2DA /* Lineage.xcdatamodeld in Sources */,
-				ABD172EB1C233C7A0071D2DA /* TrailerRecord.swift in Sources */,
+				ABD172EB1C233C7A0071D2DA /* Trailer.swift in Sources */,
 				ABD172E91C233C390071D2DA /* SubmissionRecord.swift in Sources */,
 				ABD172AB1C20FEA50071D2DA /* MasterViewController.swift in Sources */,
 				ABD172AD1C20FEA50071D2DA /* DetailViewController.swift in Sources */,
-				ABD172DA1C2238CC0071D2DA /* HeaderRecord.swift in Sources */,
+				ABD172DA1C2238CC0071D2DA /* Header.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +308,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABD172CB1C20FEA50071D2DA /* LineageUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
