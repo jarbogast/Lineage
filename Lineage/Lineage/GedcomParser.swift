@@ -23,14 +23,16 @@ class GedcomParser {
         for line in lines {
             let lineComponents = line.componentsSeparatedByCharactersInSet(fieldSeparators)
             let fieldName = lineComponents[1]
+            let fieldTag = RecordTag(rawValue: fieldName)!
             
-            if fieldName == "HEAD" {
+            switch fieldTag {
+            case .Header:
                 headerRecord = Header()
-            } else if fieldName == "SUBN" {
+            case .Submission:
                 submissionRecord = Submission()
-            } else if fieldName == "INDI" {
+            case .Individual:
                 individuals.append(Individual())
-            } else if fieldName == "TRLR" {
+            case .Trailer:
                 trailerRecord = Trailer()
             }
         }

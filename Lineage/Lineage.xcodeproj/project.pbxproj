@@ -21,6 +21,7 @@
 		ABD172E91C233C390071D2DA /* Submission.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172E81C233C390071D2DA /* Submission.swift */; };
 		ABD172EB1C233C7A0071D2DA /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172EA1C233C7A0071D2DA /* Trailer.swift */; };
 		ABD172ED1C2379550071D2DA /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172EC1C2379550071D2DA /* Record.swift */; };
+		ABD172EF1C237D4B0071D2DA /* RecordTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172EE1C237D4B0071D2DA /* RecordTag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		ABD172E81C233C390071D2DA /* Submission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Submission.swift; sourceTree = "<group>"; };
 		ABD172EA1C233C7A0071D2DA /* Trailer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		ABD172EC1C2379550071D2DA /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		ABD172EE1C237D4B0071D2DA /* RecordTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				ABD172E81C233C390071D2DA /* Submission.swift */,
 				ABD172EA1C233C7A0071D2DA /* Trailer.swift */,
 				ABD172EC1C2379550071D2DA /* Record.swift */,
+				ABD172EE1C237D4B0071D2DA /* RecordTag.swift */,
 			);
 			name = Gedcom;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				ABD172ED1C2379550071D2DA /* Record.swift in Sources */,
 				ABD172A61C20FEA50071D2DA /* AppDelegate.swift in Sources */,
 				ABD172A91C20FEA50071D2DA /* Lineage.xcdatamodeld in Sources */,
+				ABD172EF1C237D4B0071D2DA /* RecordTag.swift in Sources */,
 				ABD172EB1C233C7A0071D2DA /* Trailer.swift in Sources */,
 				ABD172E91C233C390071D2DA /* Submission.swift in Sources */,
 				ABD172AB1C20FEA50071D2DA /* MasterViewController.swift in Sources */,
