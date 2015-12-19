@@ -22,6 +22,12 @@
 		ABD172EB1C233C7A0071D2DA /* Trailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172EA1C233C7A0071D2DA /* Trailer.swift */; };
 		ABD172ED1C2379550071D2DA /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172EC1C2379550071D2DA /* Record.swift */; };
 		ABD172EF1C237D4B0071D2DA /* RecordTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172EE1C237D4B0071D2DA /* RecordTag.swift */; };
+		ABD172F11C260E140071D2DA /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172F01C260E140071D2DA /* Family.swift */; };
+		ABD172F31C2610E30071D2DA /* Multimedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172F21C2610E30071D2DA /* Multimedia.swift */; };
+		ABD172F51C2610F90071D2DA /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172F41C2610F90071D2DA /* Note.swift */; };
+		ABD172F71C26110D0071D2DA /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172F61C26110D0071D2DA /* Repository.swift */; };
+		ABD172F91C26112A0071D2DA /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172F81C26112A0071D2DA /* Source.swift */; };
+		ABD172FB1C26113F0071D2DA /* Submitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD172FA1C26113F0071D2DA /* Submitter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +70,12 @@
 		ABD172EA1C233C7A0071D2DA /* Trailer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trailer.swift; sourceTree = "<group>"; };
 		ABD172EC1C2379550071D2DA /* Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		ABD172EE1C237D4B0071D2DA /* RecordTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTag.swift; sourceTree = "<group>"; };
+		ABD172F01C260E140071D2DA /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
+		ABD172F21C2610E30071D2DA /* Multimedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multimedia.swift; sourceTree = "<group>"; };
+		ABD172F41C2610F90071D2DA /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		ABD172F61C26110D0071D2DA /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		ABD172F81C26112A0071D2DA /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		ABD172FA1C26113F0071D2DA /* Submitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Submitter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +167,12 @@
 				ABD172EA1C233C7A0071D2DA /* Trailer.swift */,
 				ABD172EC1C2379550071D2DA /* Record.swift */,
 				ABD172EE1C237D4B0071D2DA /* RecordTag.swift */,
+				ABD172F01C260E140071D2DA /* Family.swift */,
+				ABD172F21C2610E30071D2DA /* Multimedia.swift */,
+				ABD172F41C2610F90071D2DA /* Note.swift */,
+				ABD172F61C26110D0071D2DA /* Repository.swift */,
+				ABD172F81C26112A0071D2DA /* Source.swift */,
+				ABD172FA1C26113F0071D2DA /* Submitter.swift */,
 			);
 			name = Gedcom;
 			sourceTree = "<group>";
@@ -292,11 +310,17 @@
 			files = (
 				ABD172E31C2318800071D2DA /* GedcomParser.swift in Sources */,
 				ABD172E71C231D690071D2DA /* Individual.swift in Sources */,
+				ABD172F71C26110D0071D2DA /* Repository.swift in Sources */,
 				ABD172ED1C2379550071D2DA /* Record.swift in Sources */,
 				ABD172A61C20FEA50071D2DA /* AppDelegate.swift in Sources */,
+				ABD172FB1C26113F0071D2DA /* Submitter.swift in Sources */,
 				ABD172A91C20FEA50071D2DA /* Lineage.xcdatamodeld in Sources */,
+				ABD172F11C260E140071D2DA /* Family.swift in Sources */,
 				ABD172EF1C237D4B0071D2DA /* RecordTag.swift in Sources */,
+				ABD172F91C26112A0071D2DA /* Source.swift in Sources */,
 				ABD172EB1C233C7A0071D2DA /* Trailer.swift in Sources */,
+				ABD172F31C2610E30071D2DA /* Multimedia.swift in Sources */,
+				ABD172F51C2610F90071D2DA /* Note.swift in Sources */,
 				ABD172E91C233C390071D2DA /* Submission.swift in Sources */,
 				ABD172AB1C20FEA50071D2DA /* MasterViewController.swift in Sources */,
 				ABD172AD1C20FEA50071D2DA /* DetailViewController.swift in Sources */,

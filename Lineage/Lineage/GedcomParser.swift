@@ -15,10 +15,10 @@ class GedcomParser {
         let lines = fileContents.componentsSeparatedByCharactersInSet(lineTerminators)
         let fieldSeparators = NSCharacterSet.whitespaceCharacterSet()
         
-        var headerRecord: Header?
+        var header: Header?
         var submissionRecord: Submission?
-        var individuals = [Record]()
-        var trailerRecord: Trailer?
+        var records = [Record]()
+        var trailer: Trailer?
         
         for line in lines {
             let lineComponents = line.componentsSeparatedByCharactersInSet(fieldSeparators)
@@ -27,17 +27,29 @@ class GedcomParser {
             
             switch fieldTag {
             case .Header:
-                headerRecord = Header()
+                header = Header()
             case .Submission:
                 submissionRecord = Submission()
+            case .Family:
+                records.append(Family())
             case .Individual:
-                individuals.append(Individual())
+                records.append(Individual())
+            case .Multimedia:
+                records.append(Multimedia())
+            case .Note:
+                records.append(Note())
+            case .Repository:
+                records.append(Repository())
+            case .Source:
+                records.append(Source())
+            case .Submitter:
+                records.append(Submitter())
             case .Trailer:
-                trailerRecord = Trailer()
+                trailer = Trailer()
             }
         }
         
-        return (headerRecord, submissionRecord, individuals, trailerRecord)
+        return (header, submissionRecord, records, trailer)
     }
     
 }

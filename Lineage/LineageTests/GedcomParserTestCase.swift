@@ -39,14 +39,20 @@ class GedcomParserTestCase: XCTestCase {
         XCTAssertNil(documentLayout.trailer)
     }
     
-    func testParseHeaderSubmissionIndividualAndTrailer() {
+    func testParseAllRecordTypes() {
         let documentLayout = parser.parseRecords(   "0 HEAD\n" +
                                                     "0 SUBN\n" +
+                                                    "0 FAM\n" +
                                                     "0 INDI\n" +
+                                                    "0 OBJE\n" +
+                                                    "0 NOTE\n" +
+                                                    "0 REPO\n" +
+                                                    "0 SOUR\n" +
+                                                    "0 SUBM\n" +
                                                     "0 TRLR")
         XCTAssertNotNil(documentLayout.header)
         XCTAssertNotNil(documentLayout.submissionRecord)
-        XCTAssertEqual(documentLayout.records.count, 1)
+        XCTAssertEqual(documentLayout.records.count, 7)
         XCTAssertNotNil(documentLayout.trailer)
     }
     

@@ -10,7 +10,13 @@ import Foundation
 
 enum RecordTag : String {
     case Header = "HEAD"
-    case Submission = "SUBN"
+    case Family = "FAM"
     case Individual = "INDI"
+    case Multimedia = "OBJE"
+    case Note = "NOTE"
+    case Repository = "REPO"
+    case Source = "SOUR"
+    case Submission = "SUBN"
+    case Submitter = "SUBM"
     case Trailer = "TRLR"
 }
