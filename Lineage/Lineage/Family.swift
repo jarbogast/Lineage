@@ -17,15 +17,12 @@ class Family: Record {
     }
     
     func parseChildren(children: [String]) -> String? {
-        let fieldSeparators = NSCharacterSet.whitespaceCharacterSet()
-        
         for line in children {
-            let lineComponents = line.componentsSeparatedByCharactersInSet(fieldSeparators)
+            let lineComponents = GedcomParser.parseLine(line)
             
-            let fieldName = lineComponents[1]
-            switch fieldName {
+            switch lineComponents.recordName  {
             case "HUSB":
-                return lineComponents[2].stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: "@"))
+                return lineComponents.referenceId
             default:
                 return nil
             }

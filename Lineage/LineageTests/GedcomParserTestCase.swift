@@ -55,4 +55,19 @@ class GedcomParserTestCase: XCTestCase {
         XCTAssertNotNil(documentLayout.trailer)
     }
     
+    func testParseLineWithoutReferenceId() {
+        let lineComponents = GedcomParser.parseLine("0 CHIL")
+        
+        XCTAssertEqual(lineComponents.level, "0")
+        XCTAssertEqual(lineComponents.referenceId, "")
+        XCTAssertEqual(lineComponents.recordName, "CHIL")
+    }
+    
+    func testParseLineWithReferenceId() {
+        let lineComponents = GedcomParser.parseLine("1 @57@ HUSB")
+        
+        XCTAssertEqual(lineComponents.level, "1")
+        XCTAssertEqual(lineComponents.referenceId, "57")
+        XCTAssertEqual(lineComponents.recordName, "HUSB")
+    }
 }

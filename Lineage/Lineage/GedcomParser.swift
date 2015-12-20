@@ -101,7 +101,13 @@ class GedcomParser {
         if lineComponents.count == 2 {
             return(lineComponents[0], "", lineComponents[1])
         } else {
-            return(lineComponents[0], lineComponents[1], lineComponents[2])
+            let referenceIdDelimiters = NSCharacterSet(charactersInString: "@")
+            let refIdFirst = lineComponents[1].hasPrefix("@")
+            let recordType = refIdFirst ? lineComponents[2] : lineComponents[1]
+            let refIdComponent = refIdFirst ? lineComponents[1] : lineComponents[2]
+            let refId = refIdComponent.stringByTrimmingCharactersInSet(referenceIdDelimiters)
+
+            return (lineComponents[0], refId, recordType)
         }
     }
 }
