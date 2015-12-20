@@ -17,7 +17,7 @@ class Record {
         childRecords = []
     }
     
-    init(withId id: String, childRecords: String) {
+    init(withId id: String, childRecords: [String]) {
         self.id = id
         self.childRecords = []
     }

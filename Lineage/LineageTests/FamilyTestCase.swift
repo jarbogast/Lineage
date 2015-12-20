@@ -11,10 +11,11 @@ import XCTest
 
 class FamilyTestCase: XCTestCase {
 
-    let family = Family(withId: "4", childRecords: "")
+    let family = Family(withId: "4", childRecords: ["1 HUSB @3@", "1 WIFE @4@"])
 
     func testInitializer() {
         XCTAssertEqual(family.id, "4")
+        XCTAssertEqual(family.husbandId, "3")
     }
 
 }

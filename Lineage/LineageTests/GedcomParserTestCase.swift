@@ -10,10 +10,9 @@ import XCTest
 @testable import Lineage
 
 class GedcomParserTestCase: XCTestCase {
-    let parser = GedcomParser()
     
     func testParseHeader() {
-        let documentLayout = parser.parseRecords("0 HEAD")
+        let documentLayout = GedcomParser.parseRecords("0 HEAD")
         
         XCTAssertNotNil(documentLayout.header)
         XCTAssertNil(documentLayout.submissionRecord)
@@ -22,7 +21,7 @@ class GedcomParserTestCase: XCTestCase {
     }
 
     func testParseNoHeaderOneIndividual() {
-        let documentLayout = parser.parseRecords("0 INDI")
+        let documentLayout = GedcomParser.parseRecords("0 INDI")
         
         XCTAssertNil(documentLayout.header)
         XCTAssertNil(documentLayout.submissionRecord)
@@ -31,7 +30,7 @@ class GedcomParserTestCase: XCTestCase {
     }
     
     func testParseHeaderAndOneIndividual() {
-        let documentLayout = parser.parseRecords(   "0 HEAD\n" +
+        let documentLayout = GedcomParser.parseRecords(   "0 HEAD\n" +
                                                     "0 INDI")
         XCTAssertNotNil(documentLayout.header)
         XCTAssertNil(documentLayout.submissionRecord)
@@ -40,7 +39,7 @@ class GedcomParserTestCase: XCTestCase {
     }
     
     func testParseAllRecordTypes() {
-        let documentLayout = parser.parseRecords(   "0 HEAD\n" +
+        let documentLayout = GedcomParser.parseRecords(   "0 HEAD\n" +
                                                     "0 SUBN\n" +
                                                     "0 FAM\n" +
                                                     "0 INDI\n" +
