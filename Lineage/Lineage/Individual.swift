@@ -6,6 +6,6 @@
 //  Copyright © 2015 Jonathan Arbogast. All rights reserved.
 //
 
-struct Individual: Record {
+class Individual: Record {
     
 }

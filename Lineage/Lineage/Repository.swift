@@ -6,6 +6,6 @@
 //  Copyright © 2015 Jonathan Arbogast. All rights reserved.
 //
 
-struct Repository: Record {
+class Repository: Record {
     
 }

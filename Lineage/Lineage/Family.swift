@@ -6,6 +6,10 @@
 //  Copyright © 2015 Jonathan Arbogast. All rights reserved.
 //
 
-struct Family: Record {
-    
+import Foundation
+
+class Family: Record {
+    let husband: Individual? = nil
+    let wife: Individual? = nil
+
 }
